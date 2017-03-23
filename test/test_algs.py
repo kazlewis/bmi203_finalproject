@@ -1,4 +1,5 @@
 import numpy as np
+import os
 from bmi203fp import io_tools, methods
 
 def test_autoencoder():
@@ -30,8 +31,9 @@ def test_neuralnetwork():
     convergence_criteria = 0.0001
     max_tolerated_error = 0.1
     
-    pos_data = io_tools.read_pos_data('/bmi203fp/rap1-lieb-positives.txt')
-    neg_data = io_tools.read_neg_data('/bmi203fp/yeast-upstream-1k-negative.fa')
+    os.chdir('bmi203fp')
+    pos_data = io_tools.read_pos_data('rap1-lieb-positives.txt')
+    neg_data = io_tools.read_neg_data('yeast-upstream-1k-negative.fa')
     
     # Clean up data subset for training purposes
     train_pos_data = pos_data[0:136]
