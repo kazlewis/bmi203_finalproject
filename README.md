@@ -3,7 +3,8 @@
 [![Build
 Status](https://travis-ci.org/kazlewis/bmi203_finalproject.svg?branch=master)](https://travis-ci.org/kazlewis/bmi203_finalproject)
 
-Example python project with testing.
+Implementation of three-layer feed forward neural network with backpropagation and error weighted derivaive updates. 
+Includes bias nodes at both the input and hidden layer.
 
 ## usage
 
