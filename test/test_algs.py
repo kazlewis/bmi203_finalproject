@@ -21,6 +21,9 @@ def test_autoencoder():
 
     assert final_error < max_tolerated_error
     
+    # useless comment
+    
+    
 def test_neuralnetwork():
     # Set up run parameters to test-train neural net
     input_layer_size = 34
